@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        
+    </style>
+</head>
+
+<body style="background-color: black;color: white;">
+    <div id="main">
+        <div id="result">
+            <div class="key">Press the key And see Which Key U Press With their Codes</div>
+        </div>
+    </div>
+
+    <script>
+        const key=document.getElementById("result")
+        window.addEventListener("keydown",(e)=>{
+        result.innerHTML=` 
+        <div class=color  style="text-align: center;
+        justify-content: center;"> <table>
+  <tr>
+    <th>Code</th>
+    <th>Key COde</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key=== " "?"space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+  <tr></>
+    </table>`
+        })
+    </script>
+</body>
+</html>
